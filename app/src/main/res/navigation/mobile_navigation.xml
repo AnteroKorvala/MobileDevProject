@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_posts">
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.clout.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.clout.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_posts"
+        android:name="com.example.clout.ui.home.PostFragment"
+        android:label="@string/posts"
+        tools:layout="@layout/fragment_post_list" />
+
+    <fragment
+        android:id="@+id/nav_create"
+        android:name="com.example.clout.ui.create.CreatePostFragment"
+        android:label="@string/create"
+        tools:layout="@layout/fragment_create_post" />
+
+</navigation>
